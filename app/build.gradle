@@ -34,6 +34,23 @@ android {
             crunchPngs false
             versionNameSuffix "-debug"
         }
+        compileOptions{
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+        packagingOptions{
+            exclude 'META-INF/LGPL2.1'
+            exclude 'META-INF/LICENSE'
+            exclude 'META-INF/LICENSE.TXT'
+            exclude 'META-INF/NOTICE'
+            exclude 'META-INF/NOTICE.TXT'
+        }
+        lintOptions{
+            abortOnError false
+            //disable 'InlinedApi', 'AllowBackup'
+            showAll true
+            htmlReport true
+        }
     }
 }
 
