@@ -5,6 +5,7 @@ import org.apache.commons.lang3.builder.ToStringStyle;
 
 import java.time.LocalDateTime;
 
+import lombok.Builder;
 import lombok.Getter;
 
 /**
@@ -13,7 +14,7 @@ import lombok.Getter;
  *
  * @author Kevin Araya Reygada
  */
-
+@Builder
 public final class Noticia {
 
     /**

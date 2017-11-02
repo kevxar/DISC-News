@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Disc News</string>
+    <string name="MessageProgressDialog">Cargando</string>
+    <string name="TitleProgressDialog">Cargando Título</string>
 </resources>
